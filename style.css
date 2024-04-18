@@ -6,23 +6,25 @@
 body {
     height: 100vh;
     width: 100vw;
-    border: 2px solid black;
+    border: 2px solid rgb(12, 12, 12);
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(45deg,rgb(34, 33, 33), rgb(0, 0, 0), rgb(46, 44, 44));
+    /* background: linear-gradient(45deg,rgb(0, 0, 0), rgb(22, 21, 21), rgb(0, 0, 0)); */
+    /* background-color:black; */
+    background-color: rgba(166, 108, 241, 0.863);
 }
 
 #main {
     height: 91vh;
     width: 27%;
-    border: 2px solid black;
+    border: 1px solid black;
     display: inline-flexbox;
     justify-content: center;
     align-self: center;
-    background-color: black;
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px 0px white;
+    background-color: rgb(166, 108, 241);
+    border-radius: 2em;
+    box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
 
 }
 
@@ -40,52 +42,35 @@ body {
     width:23vw;
     border: 2px solid black;
     font-size: 50px;
-    color: white;
-    background: linear-gradient(45deg,rgb(49, 47, 47), rgb(19, 18, 19), rgb(18, 19, 19));
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.301);
+    /* background: linear-gradient(45deg,rgb(49, 47, 47), rgb(19, 18, 19), rgb(18, 19, 19)); */
     margin-bottom: 10px;
-    border-radius: 15px;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
     text-align: right;
     padding: 10px;
 
 }
-@media (max-width:800px){
-    #main {
-        height: 91vh;
-        width: 50%;
-        border: 2px solid black;
-        display: inline-flexbox;
-        justify-content: center;
-        align-self: center;
-        background-color: black;
-        border-radius: 10px;
-        box-shadow: 0px 0px 20px 0px white;
-    
-    }
-    #displaybox{
-        height: 1.5em;
-        width:88%;
-        border: 2px solid black;
-        font-size: 50px;
-        color: white;
-        background: linear-gradient(45deg,rgb(49, 47, 47), rgb(19, 18, 19), rgb(18, 19, 19));
-        margin-bottom: 10px;
-        border-radius: 15px;
-        text-align: right;
-        padding: 10px;
-    
-    }
+#displaybox::placeholder{
+    color: antiquewhite;
+}
 
     
-}
+
 @media (max-width:1200px){
     #main {
-        height: 91vh;
-        width: 50%;
+        height: 100%;
+        width: 90%;
         border: 2px solid black;
         display: inline-flexbox;
         justify-content: center;
         align-self: center;
-        background-color: black;
+        /* background-color: black; */
+        background-color: rgb(166, 108, 241);
         border-radius: 10px;
         box-shadow: 0px 0px 20px 0px white;
     
@@ -96,7 +81,8 @@ body {
         border: 2px solid black;
         font-size: 50px;
         color: white;
-        background: linear-gradient(45deg,rgb(49, 47, 47), rgb(19, 18, 19), rgb(18, 19, 19));
+        /* background: linear-gradient(45deg,rgb(49, 47, 47), rgb(19, 18, 19), rgb(18, 19, 19)); */
+        background-color: rgba(0, 0, 0, 0.301);
         margin-bottom: 10px;
         border-radius: 15px;
         text-align: right;
@@ -118,24 +104,94 @@ body {
     height: 4.5rem;
     width: 4.5rem;
     margin: 6px;
-    background: linear-gradient(45deg,rgb(0, 0, 0), rgb(26, 25, 26), rgb(59, 62, 63));
-    color: white;
+    /* background: linear-gradient(45deg,rgb(0, 0, 0), rgb(26, 25, 26), rgb(59, 62, 63)); */
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.438);
     border-radius: 20px;
-    border: 0px solid black;
+    border: 1px solid black;
     font-size: 25px;
 }
 
 #equal {
     height: 4.5rem;
     width: 10rem;
-    background-color: rgb(14, 122, 223);
+    background-color: rgb(150, 255, 12);
     border-radius: 50px;
-    border: 0px solid black;
+    border: 1px solid black;
     font-size: 25px;
+    margin-right: 2px;
+    font-weight: bolder;
+    margin-top: 2px;
+
 }
 #c{
     color: red;
 }
 #op{
-    color:  rgb(0, 132, 255);
+    color:  rgb(150, 255, 12);
+}
+@media (max-width:800px){
+    body{
+         background-color: rgb(166, 108, 241); 
+    }
+    #main {
+        margin-top: 2em;
+        height: 100%;
+        width: 90%;
+        border: 0px solid black;
+        display: inline-flexbox;
+        justify-content: center;
+        align-self: center;
+        background-color: rgb(166, 108, 241);
+        border-radius: 10px;
+        box-shadow:none; 
+
+    
+    }
+    #in{
+        margin-top: 7em;
+        height: 3em;
+    }
+    #displaybox{
+        height: 2em;
+        width:88%;
+        border: 2px solid black;
+        font-size: 50px;
+        color: white;
+        /* background: linear-gradient(45deg,rgb(49, 47, 47), rgb(19, 18, 19), rgb(18, 19, 19)); */
+        background-color: rgba(0, 0, 0, 0.301);
+        margin-bottom:2em;
+        border-radius: 15px;
+        text-align: right;
+        padding: 10px;
+    
+    }
+    .div1 {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom:0px;
+    }
+    
+    .bt1 {
+        height: 4rem;
+        width: 4.5rem;
+        margin: 6px;
+        /* background: linear-gradient(45deg,rgb(0, 0, 0), rgb(26, 25, 26), rgb(59, 62, 63)); */
+        background-color: rgba(0, 0, 0, 0.301);
+        color: white;
+        border-radius: 20px;
+        border: 1px solid black;
+        font-size: 25px;
+    }
+    
+    #equal {
+        height: 4rem;
+        width: 10rem;
+        background-color: rgb(150, 255, 12);
+        border-radius: 50px;
+        border: 1px solid black;
+        font-size: 25px;
+        margin-top: 2px;
+        font-weight: bolder;
+    }
 }
